@@ -12,6 +12,8 @@ Thanks,
 Marissa  
 
 *Answer 1* 
+
+
 Hi Marissa,
 
 Thanks for reaching out and sharing your honest feedback with us. I completely understand how frustrating it is when a UI update slows down your momentum, especially when you're actively iterating and need to clear or delete indexes frequently.
@@ -20,10 +22,10 @@ I’m passing your feedback directly over to our Product and Design teams so the
 
 In the meantime, the absolute fastest way to bypass those dashboard clicks entirely while you're building is to take a programmatic approach. You can clear or delete an index in a single shot using the Algolia CLI:
 
-# To clear all records from an index instantly:
+To clear all records from an index instantly:
 "algolia index clear your_index_name"
 
-# To delete an index entirely:
+To delete an index entirely:
 "algolia index delete your_index_name"
 
 If you prefer, you can also script this directly into your existing development workflows using our API clients (via the clearObjects() or delete() methods). You can check out the full syntax and parameters for those methods here:
@@ -54,6 +56,7 @@ Our website is an imdb like website where users can post reviews of coffee shops
 Please advise on how to fix this. Thanks.   
 
 *Answer 2*:   
+
 
 Hi Carrie,
 
@@ -95,6 +98,7 @@ Hi, my website is not working and here's the error:
 Can you fix it please?  
 
 *Answer 3*:  
+
 
 Hi Marc,
 
