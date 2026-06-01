@@ -102,23 +102,20 @@ Can you fix it please?
 
 Hi Marc,
 
-Thanks for reaching out and dropping in that screenshot of the error message. Let's dig into what's going on here and get your site back on track.
+Thanks for reaching out and sending over that screenshot. I took a look at the error, and I can definitely help you figure out what’s going on here.
 
-Looking at the stack trace you attached, the browser is running into an Uncaught ReferenceError: searchkit is not defined. This means the code on your page is trying to execute functions from a library wrapper called "Searchkit," but your application isn't loading or importing it correctly before running the script.
+The error Uncaught ReferenceError: searchkit is not defined means your site is trying to use a library called "Searchkit," but it isn't loading correctly. The big thing to know here is that Searchkit is actually a 3rd party tool built for Elasticsearch, so it isn't natively compatible with Algolia's backend.
 
-Because Searchkit is an open-source, third-party library wrapper and not an official Algolia product, I can't look at or debug that specific code on our end. However, we actually have a fully supported, highly optimized tool built exactly for what you are trying to do.
+Since it’s an external library, I can’t debug that specific code for you, but I am 100% here to help you move over to a solution that actually works with our system. I’d strongly suggest moving to InstantSearch.js. It’s our official library, it’s super fast, and it’s built to handle everything you’re trying to do. You can see how to get started with it in our InstantSearch UI documentation.
 
-To get your search running seamlessly without third-party wrapper dependencies, I highly recommend checking out InstantSearch.js (our official frontend UI widget library). It's super easy to plug into vanilla JavaScript projects, and it includes native hooks for performance optimization and analytics tracking out of the box. You can see how our frontend ecosystem is designed by reviewing our Getting Started with InstantSearch guide. 
-https://www.algolia.com/doc/guides/sending-events/getting-started
-
-You can get our official packages added to your setup by running:
+To get the official packages, you just need to run:
 
 "npm install algoliasearch instantsearch.js"
 
-I have a straightforward, step-by-step transition guide that shows you how to wire up your UI using our native widgets so this error disappears entirely. For an exact look at how our UI rendering works under the hood, you can check out the InstantSearch Hits Widget API documentation.
+I’ve got a step-by-step guide I can send you that makes switching over pretty easy. Check out the Hits Widget API to see how it renders:
 https://www.algolia.com/doc/api-reference/widgets/hits/js
 
-Let me know if you would like to hop on a quick call with me to help you make the switch!
+If you need any help with the implementation as you make the move, just let me know. I'm happy to support you through the transition!
 
 Best,
 
